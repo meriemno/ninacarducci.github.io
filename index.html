@@ -36,7 +36,7 @@
 <body>
 
 	<header class="top-header">
-		<h1 class="name">Nina Carducci</h1>
+		<h1  itemprop="name" class="name">Nina Carducci</h1>
 		<nav class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -88,7 +88,7 @@
 		</section>
 		<div id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="photo de Nina Carducci">
+				<img  itemprop="image" src="./assets/images/nina.webp" alt="photo de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -243,6 +243,7 @@
 			  "@context": "http://schema.org",
 			  "@type": "LocalBusiness",
 			  "name": "Nina Carducci",
+			  "image": "https://meriemno.github.io/ninacarducci.github.io/assets/images/nina.webp",
 			  "telephone": "05 56 67 78 89",
 			  "address": {
 				"@type": "PostalAddress",
@@ -254,7 +255,8 @@
 				"@type": "OpeningHoursSpecification",
 				"dayOfWeek": {
 				  "@type": "DayOfWeek",
-				  "name": "Je réponds au téléphone du lundi au vendredi de 10h à 19h"
+				  "name": "Je réponds au téléphone du lundi au vendredi de 10h à 19h",
+				  "openingHours": "10:00-19:00"
 				}		
 			  }
 			}
