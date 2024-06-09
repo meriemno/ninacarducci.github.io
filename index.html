@@ -31,11 +31,11 @@
 	<meta name="twitter:image" content="https://meriemno.github.io/ninacarducci.github.io/images/nina.webp">
 	<meta name="twitter:site" content="@NinaCarducci">
 
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer="async"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.min.js" defer="async"></script>
-	<script src="./assets/scripts.min.js" defer="async"></script>
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
 	<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
 	<script type="application/ld+json">
 			{
@@ -52,19 +52,37 @@
 				"postalCode": "33200",
 				"addressCountry": "FR"
 			  },
-			  "openingHoursSpecification": {
+			  "openingHoursSpecification": [{
 				"@type": "OpeningHoursSpecification",
-				"dayOfWeek":["https://schema.org/Monday",
-				"https://schema.org/Tuesday",
-				"https://schema.org/Wednesday",
-				"https://schema.org/Thursday",
-				"https://schema.org/Friday",
-				"https://schema.org/Saturday",
-				"https://schema.org/Sunday"
-				],
+				"dayOfWeek": "http://schema.org/Monday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  }, {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "http://schema.org/Tuesday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  }, {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "http://schema.org/Wednesday",
+				"opens": "10:00",
+				"closes": "19:00"	
+			  }, {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "http://schema.org/Thursday",
+				"opens": "10:00",
+				"closes": "19:00"
+			  }, {
+				  
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "http://schema.org/Friday",
 				"opens": "10:00",
 				"closes": "19:00"
 			  }
+
+			  ]
+
+
 			}
 			</script>
 
@@ -263,7 +281,7 @@
 
 		</div>
 	</main>
-	
+
 </body>
 
 </html>
