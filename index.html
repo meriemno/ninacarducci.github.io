@@ -15,7 +15,7 @@
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
 
-	<meta property="og:title" content="Nina Carducci Photography">
+	<meta property="og:title" content="Nina Carducci Photographe Freelance">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://meriemno.github.io/ninacarducci.github.io/">
 	<meta property="og:image" content="https://meriemno.github.io/ninacarducci.github.io/images/nina.webp">
@@ -25,7 +25,7 @@
 	<meta property="og:locale" content="fr_FR">
 	<!-- Balises Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Nina Carducci Photography">
+	<meta name="twitter:title" content="Nina Carducci Photographe Freelance">
 	<meta name="twitter:description"
 		content="Découvrez le portfolio de Nina Carducci, une photographe spécialisée dans la capture de moments spéciaux.">
 	<meta name="twitter:image" content="https://meriemno.github.io/ninacarducci.github.io/images/nina.webp">
@@ -36,7 +36,7 @@
 <body>
 
 	<header class="top-header">
-		<h1  itemprop="name" class="name">Nina Carducci</h1>
+		<h1 itemprop="name" class="name">Nina Carducci</h1>
 		<nav class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -88,13 +88,13 @@
 		</section>
 		<div id="about">
 			<div class="picture left">
-				<img  itemprop="image" src="./assets/images/nina.webp" alt="photo de Nina Carducci">
+				<img itemprop="image" src="./assets/images/nina.webp" alt="photo de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
-				<span class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
+				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
 					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
-					immortels, voilà ce qui me fait vibrer.</span>
+					immortels, voilà ce qui me fait vibrer.</p>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie :
 					le
 					figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
@@ -108,7 +108,7 @@
 			</div>
 		</div>
 		<div id="gallery">
-			<h3 class="title">Portfolio</h3>
+			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
@@ -143,18 +143,18 @@
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
+						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
 							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
 							vérité.
-						</h2>
+						</p>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
 			</div>
 		</div>
 		<div id="services">
-			<h3 class="title">Mes services</h3>
+			<h2 class="title">Mes services</h2>
 			<div class="container">
 				<div class="service">
 					<div class="service__description">
@@ -197,8 +197,8 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
@@ -226,12 +226,6 @@
 
 		</div>
 	</main>
-
-	<footer>
-
-
-	</footer>
-
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -255,11 +249,16 @@
 			  },
 			  "openingHoursSpecification": {
 				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": {
-				  "@type": "DayOfWeek",
-				  "name": "Je réponds au téléphone du lundi au vendredi de 10h à 19h",
-				  "openingHours": "10:00-19:00"
-				}		
+				"dayOfWeek":["https://schema.org/Monday",
+				"https://schema.org/Tuesday",
+				"https://schema.org/Wednesday",
+				"https://schema.org/Thursday",
+				"https://schema.org/Friday",
+				"https://schema.org/Saturday",
+				"https://schema.org/Sunday"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
 			  }
 			}
 			</script>
